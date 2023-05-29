@@ -10,8 +10,8 @@ import pytesseract
 from PIL import Image,ImageQt
 from databases import MongoDB
 import io
-import PyPDF2
-from datetime import datetime
+
+
 
 class Login(QWidget, Ui_Login):
     def __init__(self) -> None:
@@ -63,8 +63,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.btn_cvendas.clicked.connect(lambda:self.Pages.setCurrentWidget(self.Cad_vendas))
         self.btn_cadastrar_user.clicked.connect(lambda: self.Pages.setCurrentWidget(self.tela_cadastro))
         self.btn_EscanearDoc.clicked.connect(lambda: self.Pages.setCurrentWidget(self.EscanearDoc))
-        #self.btn_consultas.clicked.connect(lambda: self.Pages.setCurrentWidget(self.consultas))
-        
+               
         self.btn_cadastrar.clicked.connect(self.subscribe_user)
         self.btn_enviarcad.clicked.connect(self.subscribe_clients)
         self.btn_consultas.clicked.connect(self.download_clients)
@@ -178,29 +177,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             msg.setText("Documento não encontrado!!!")
             msg.exec_()
 
-        
-    '''def scan_document(self, label):
-        global img, img_tk, img_width, img_height
-        wia = win32com.client.Dispatch("WIA.CommonDialog")
-        self.image = wia.ShowAcquireImage()
-
-        # cria um nome de arquivo para a imagem digitalizada
-        self.image_path = r"C:/Users/Keny/Documents/testscan/img.pdf"
-        self.file_exists = os.path.isfile(self.image_path)
-        if self.file_exists:
-            self.file_count = 1
-            while self.file_exists:
-                self.file_count += 1
-                self.new_image_path = r"C:/Users/Keny/Documents/testscan/img" + str(self.file_count) + ".pdf"
-                self.file_exists = os.path.isfile(self.new_image_path)
-            self.image_path = self.new_image_path
-
-        self.image.SaveFile(self.image_path)
-
-        # atualiza o label com o arquivo digitalizado
-        pixmap = QPixmap(self.image_path)
-        label.setPixmap(pixmap)'''
-    
+               
     def scan_document(self, label,tab_doc):
         global img, cpf, img_tk, img_width, img_height
         cpf = self.entry_cpf.text()
@@ -277,23 +254,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         os.remove(temp_image_path)
         os.remove(output_file_path)
 
-    '''def display_all_clients(self):
-        cpf = self.entry_cpf.text()
-        cpf = mongo.get_all_cpf()
-        text = ""
-        for client in cpf:
-            text += f"Numero Coo: {client['numero_coo']}\n"
-            text += f"CPF: {client['cpf']}\n"
-            text += f"Auto Ms: {client['Auto_Ms']}\n\n"
-        self.label_clients.setText(text)
-        self.scroll_area.setWidget(self.label_clients)
-
-        mongo = MongoDB('root', 'root', 'digitalizador_pi')
-        mongo.connect()
-        mongo.get_all_clients(cpf)
-        mongo.close()'''
-
-        
+    
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Login()
