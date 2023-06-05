@@ -1,4 +1,4 @@
-from PySide2.QtWidgets import (QApplication, QMainWindow, QWidget, QMessageBox)
+from PySide2.QtWidgets import (QApplication, QMainWindow, QWidget, QMessageBox, QFileDialog)
 from ui_login import Ui_Login
 import sys
 from ui_scan import Ui_MainWindow
@@ -59,6 +59,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if user == "Usuário":
             self.btn_cadastrar_user.setVisible(False)
 
+        
         self.btn_home.clicked.connect(lambda: self.Pages.setCurrentWidget(self.home))
         self.btn_cvendas.clicked.connect(lambda:self.Pages.setCurrentWidget(self.Cad_vendas))
         self.btn_cadastrar_user.clicked.connect(lambda: self.Pages.setCurrentWidget(self.tela_cadastro))
@@ -79,6 +80,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.btn_digitalizarTab4.clicked.connect(lambda: self.scan_document(self.label_scan4,'documento'))
         self.btn_digitalizarTab5.clicked.connect(lambda: self.scan_document(self.label_scan5,'frente_procuração'))
         self.btn_digitalizarTab6.clicked.connect(lambda: self.scan_document(self.label_scan6,'verso_procuração'))
+
+        self.btn_salvar1.setVisible(False)
+        self.btn_salvar2.setVisible(False)
+        self.btn_salvar3.setVisible(False)
+        self.btn_salvar4.setVisible(False)
+        self.btn_salvar5.setVisible(False)
+        self.btn_salvar6.setVisible(False)
+        
+        self.btn_salvar1.clicked.connect(lambda: self.salvar_imagem(self.label_scan1))
+        self.btn_salvar2.clicked.connect(lambda: self.salvar_imagem(self.label_scan2))
+        self.btn_salvar3.clicked.connect(lambda: self.salvar_imagem(self.label_scan3))
+        self.btn_salvar4.clicked.connect(lambda: self.salvar_imagem(self.label_scan4))
+        self.btn_salvar5.clicked.connect(lambda: self.salvar_imagem(self.label_scan5))
+        self.btn_salvar6.clicked.connect(lambda: self.salvar_imagem(self.label_scan6))
+
 
         self.btn_ocrTab1.clicked.connect(lambda: self.convert_image_to_text_and_show(self.label_scan1))
         self.btn_ocrTab2.clicked.connect(lambda: self.convert_image_to_text_and_show(self.label_scan2))
@@ -170,11 +186,62 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.entry_numerocoo.setText(str(documento.get("numero_coo", "")))
             self.entry_automs.setText(str(documento.get("Auto_Ms", "")))
             self.entry_datavenda.setText(documento.get("Data_venda", ""))
+            pixmap_cupom = QPixmap()
+            pixmap_frente_receita = QPixmap()
+            pixmap_verso_receita = QPixmap()
+            pixmap_documento = QPixmap()
+            pixmap_frente_procuração = QPixmap()
+            pixmap_verso_procuração = QPixmap()
+
+
+            if documento.get("cupom", ""):
+                pixmap_cupom.loadFromData(documento.get("cupom", ""))
+                self.label_scan1.setPixmap(pixmap_cupom)
+                self.btn_salvar1.setVisible(True)
+            else:
+                self.label_scan1.setText("Documento não encontrado!!!")
+
+            if documento.get("frente_receita", ""):
+                pixmap_frente_receita.loadFromData(documento.get("frente_receita", ""))
+                self.label_scan2.setPixmap(pixmap_frente_receita)
+                self.btn_salvar2.setVisible(True)
+            else:
+                self.label_scan2.setText("Nenhuma Receita Digitalizada!!!")
+
+            if documento.get("verso_receita", ""):
+                pixmap_documento.loadFromData(documento.get("verso_receita", ""))
+                self.label_scan3.setPixmap(pixmap_verso_receita)
+                self.btn_salvar3.setVisible(True)
+            else:
+                self.label_scan3.setText("Nenhuma Receita Digitalizada!!!")
+
+            if documento.get("documento", ""):
+                pixmap_documento.loadFromData(documento.get("documento", ""))
+                self.label_scan4.setPixmap(pixmap_documento)
+                self.btn_salvar4.setVisible(True)
+            else:
+                self.label_scan4.setText("Nenhum Documento Digitalizado!!!")
+
+            if documento.get("frente_pocuração", ""):
+                pixmap_documento.loadFromData(documento.get("frente_procuração", ""))
+                self.label_scan5.setPixmap(pixmap_frente_procuração)
+                self.btn_salvar5.setVisible(True)
+            else:
+                self.label_scan5.setText("Nenhuma procuração Digitalizada!!!")
+
+            if documento.get("verso_pocuração", ""):
+                pixmap_documento.loadFromData(documento.get("verso_procuração", ""))
+                self.label_scan6.setPixmap(pixmap_verso_procuração)
+                self.btn_salvar6.setVisible(True)
+            else:
+                self.label_scan6.setText("Nenhuma procuração Digitalizada!!!")
+
+
         else:
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Warning)
             msg.setWindowTitle("Atenção")
-            msg.setText("Documento não encontrado!!!")
+            msg.setText()
             msg.exec_()
 
                
@@ -253,6 +320,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # Delete temporary files
         os.remove(temp_image_path)
         os.remove(output_file_path)
+
+   
+    def salvar_imagem(self, label):
+        pixmap = label.pixmap()
+        if pixmap is not None:
+            options = QFileDialog.Options()
+            options |= QFileDialog.DontUseNativeDialog
+            file_name, _ = QFileDialog.getSaveFileName(self, "Salvar Imagem", "", "Arquivos de Imagem (*.png *.jpg *.jpeg);;Todos os Arquivos (*)", options=options)
+            if file_name:
+                pixmap.save(file_name)
 
     
 if __name__ == '__main__':

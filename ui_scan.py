@@ -100,6 +100,7 @@ class Ui_MainWindow(object):
         font2 = QFont()
         font2.setPointSize(25)
         font2.setBold(True)
+        font2.setWeight(75)
         self.label_17.setFont(font2)
         self.label_17.setAlignment(Qt.AlignCenter)
 
@@ -251,6 +252,7 @@ class Ui_MainWindow(object):
         font4 = QFont()
         font4.setPointSize(13)
         font4.setBold(True)
+        font4.setWeight(75)
         self.btn_consultas.setFont(font4)
 
         self.horizontalLayout_15.addWidget(self.btn_consultas)
@@ -273,6 +275,7 @@ class Ui_MainWindow(object):
         font5 = QFont()
         font5.setPointSize(11)
         font5.setBold(True)
+        font5.setWeight(75)
         self.btn_enviarcad.setFont(font5)
 
         self.horizontalLayout_15.addWidget(self.btn_enviarcad)
@@ -323,7 +326,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_13 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.label_scan1 = QLabel(self.scrollAreaWidgetContents)
@@ -355,6 +358,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_33.addItem(self.horizontalSpacer_9)
 
+        self.btn_salvar1 = QPushButton(self.frame_13)
+        self.btn_salvar1.setObjectName(u"btn_salvar1")
+
+        self.horizontalLayout_33.addWidget(self.btn_salvar1)
+
         self.btn_digitalizarTab1 = QPushButton(self.frame_13)
         self.btn_digitalizarTab1.setObjectName(u"btn_digitalizarTab1")
 
@@ -376,7 +384,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_11 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.label_scan2 = QLabel(self.scrollAreaWidgetContents_2)
@@ -407,6 +415,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_29.addItem(self.horizontalSpacer_7)
 
+        self.btn_salvar2 = QPushButton(self.frame_11)
+        self.btn_salvar2.setObjectName(u"btn_salvar2")
+
+        self.horizontalLayout_29.addWidget(self.btn_salvar2)
+
         self.btn_digitalizarTab2 = QPushButton(self.frame_11)
         self.btn_digitalizarTab2.setObjectName(u"btn_digitalizarTab2")
 
@@ -428,7 +441,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_18 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.label_scan3 = QLabel(self.scrollAreaWidgetContents_3)
@@ -459,6 +472,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_27.addItem(self.horizontalSpacer_6)
 
+        self.btn_salvar3 = QPushButton(self.frame_9)
+        self.btn_salvar3.setObjectName(u"btn_salvar3")
+
+        self.horizontalLayout_27.addWidget(self.btn_salvar3)
+
         self.btn_digitalizarTab3 = QPushButton(self.frame_9)
         self.btn_digitalizarTab3.setObjectName(u"btn_digitalizarTab3")
 
@@ -480,7 +498,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_17 = QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.label_scan4 = QLabel(self.scrollAreaWidgetContents_4)
@@ -512,6 +530,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_25.addItem(self.horizontalSpacer_5)
 
+        self.btn_salvar4 = QPushButton(self.frame_7)
+        self.btn_salvar4.setObjectName(u"btn_salvar4")
+
+        self.horizontalLayout_25.addWidget(self.btn_salvar4)
+
         self.btn_digitalizarTab4 = QPushButton(self.frame_7)
         self.btn_digitalizarTab4.setObjectName(u"btn_digitalizarTab4")
 
@@ -533,7 +556,7 @@ class Ui_MainWindow(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollAreaWidgetContents_5 = QWidget()
         self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
-        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.label_scan5 = QLabel(self.scrollAreaWidgetContents_5)
@@ -564,6 +587,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_22.addItem(self.horizontalSpacer_4)
 
+        self.btn_salvar5 = QPushButton(self.frame_5)
+        self.btn_salvar5.setObjectName(u"btn_salvar5")
+
+        self.horizontalLayout_22.addWidget(self.btn_salvar5)
+
         self.btn_digitalizarTab5 = QPushButton(self.frame_5)
         self.btn_digitalizarTab5.setObjectName(u"btn_digitalizarTab5")
 
@@ -585,7 +613,7 @@ class Ui_MainWindow(object):
         self.scrollArea_6.setWidgetResizable(True)
         self.scrollAreaWidgetContents_6 = QWidget()
         self.scrollAreaWidgetContents_6.setObjectName(u"scrollAreaWidgetContents_6")
-        self.scrollAreaWidgetContents_6.setGeometry(QRect(0, 0, 784, 415))
+        self.scrollAreaWidgetContents_6.setGeometry(QRect(0, 0, 784, 421))
         self.verticalLayout_16 = QVBoxLayout(self.scrollAreaWidgetContents_6)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.label_scan6 = QLabel(self.scrollAreaWidgetContents_6)
@@ -617,6 +645,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_17.addItem(self.horizontalSpacer_2)
 
+        self.btn_salvar6 = QPushButton(self.frame_3)
+        self.btn_salvar6.setObjectName(u"btn_salvar6")
+
+        self.horizontalLayout_17.addWidget(self.btn_salvar6)
+
         self.btn_digitalizarTab6 = QPushButton(self.frame_3)
         self.btn_digitalizarTab6.setObjectName(u"btn_digitalizarTab6")
 
@@ -642,7 +675,7 @@ class Ui_MainWindow(object):
         self.scroll_area.setWidgetResizable(True)
         self.scrollAreaWidgetContents_7 = QWidget()
         self.scrollAreaWidgetContents_7.setObjectName(u"scrollAreaWidgetContents_7")
-        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, 0, 808, 522))
+        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, 0, 145, 77))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_7)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_20 = QVBoxLayout()
@@ -670,6 +703,7 @@ class Ui_MainWindow(object):
         font6 = QFont()
         font6.setPointSize(14)
         font6.setBold(True)
+        font6.setWeight(75)
         self.btn_consultar.setFont(font6)
 
         self.horizontalLayout_19.addWidget(self.btn_consultar)
@@ -707,6 +741,7 @@ class Ui_MainWindow(object):
         font7 = QFont()
         font7.setPointSize(24)
         font7.setBold(True)
+        font7.setWeight(75)
         self.txt_telacadastro.setFont(font7)
         self.txt_telacadastro.setTextFormat(Qt.PlainText)
         self.txt_telacadastro.setAlignment(Qt.AlignCenter)
@@ -720,6 +755,7 @@ class Ui_MainWindow(object):
         font8 = QFont()
         font8.setPointSize(19)
         font8.setBold(True)
+        font8.setWeight(75)
         self.txt_caduser.setFont(font8)
         self.txt_caduser.setAlignment(Qt.AlignCenter)
 
@@ -736,6 +772,7 @@ class Ui_MainWindow(object):
         font9 = QFont()
         font9.setPointSize(12)
         font9.setBold(True)
+        font9.setWeight(75)
         self.txt_nome.setFont(font9)
 
         self.horizontalLayout_4.addWidget(self.txt_nome)
@@ -866,6 +903,7 @@ class Ui_MainWindow(object):
         font11 = QFont()
         font11.setPointSize(10)
         font11.setBold(True)
+        font11.setWeight(75)
         self.btn_cadastrar.setFont(font11)
 
         self.horizontalLayout_9.addWidget(self.btn_cadastrar)
@@ -924,8 +962,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.Pages.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.Pages.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(5)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -964,26 +1002,32 @@ class Ui_MainWindow(object):
         self.label_10.setText("")
         self.label_scan1.setText("")
         self.btn_ocrTab1.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar1.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab1.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab1), QCoreApplication.translate("MainWindow", u"Cupom/Recibo", None))
         self.label_scan2.setText("")
         self.btn_ocrTab2.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar2.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab2.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab2), QCoreApplication.translate("MainWindow", u"Frente Receita", None))
         self.label_scan3.setText("")
         self.btn_ocrTab3.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar3.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab3.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), QCoreApplication.translate("MainWindow", u"Verso Receita", None))
         self.label_scan4.setText("")
         self.btn_ocrTab4.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar4.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab4.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab4), QCoreApplication.translate("MainWindow", u"Documento", None))
         self.label_scan5.setText("")
         self.btn_ocrTab5.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar5.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab5.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab5), QCoreApplication.translate("MainWindow", u"Frente Procura\u00e7\u00e3o", None))
         self.label_scan6.setText("")
         self.btn_ocrTab6.setText(QCoreApplication.translate("MainWindow", u"Converter para Texto", None))
+        self.btn_salvar6.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab6.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab6), QCoreApplication.translate("MainWindow", u"Verso Procura\u00e7\u00e3o", None))
         self.clients.setText("")

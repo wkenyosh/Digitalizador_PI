@@ -68,7 +68,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="home">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -132,6 +132,7 @@
             <property name="font">
              <font>
               <pointsize>25</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -420,6 +421,7 @@
               <property name="font">
                <font>
                 <pointsize>13</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -476,6 +478,7 @@
               <property name="font">
                <font>
                 <pointsize>11</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -532,6 +535,7 @@
               <property name="font">
                <font>
                 <pointsize>11</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -558,7 +562,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget">
           <property name="currentIndex">
-           <number>0</number>
+           <number>5</number>
           </property>
           <widget class="QWidget" name="tab1">
            <attribute name="title">
@@ -576,7 +580,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -638,6 +642,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar1">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab1">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -667,7 +678,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -723,6 +734,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar2">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab2">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -752,7 +770,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -808,6 +826,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar3">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab3">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -837,7 +862,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -899,6 +924,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar4">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab4">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -928,7 +960,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -984,6 +1016,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar5">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab5">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -1013,7 +1052,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>784</width>
-                 <height>415</height>
+                 <height>421</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1072,6 +1111,13 @@
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="btn_salvar6">
+                   <property name="text">
+                    <string>Salvar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="btn_digitalizarTab6">
                    <property name="text">
                     <string>Digitalizar</string>
@@ -1101,8 +1147,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>808</width>
-             <height>522</height>
+             <width>145</width>
+             <height>77</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_21">
@@ -1141,6 +1187,7 @@
                   <property name="font">
                    <font>
                     <pointsize>14</pointsize>
+                    <weight>75</weight>
                     <bold>true</bold>
                    </font>
                   </property>
@@ -1188,6 +1235,7 @@
             <property name="font">
              <font>
               <pointsize>24</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -1216,6 +1264,7 @@
             <property name="font">
              <font>
               <pointsize>19</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -1252,6 +1301,7 @@
               <property name="font">
                <font>
                 <pointsize>12</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1314,6 +1364,7 @@
               <property name="font">
                <font>
                 <pointsize>12</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1371,6 +1422,7 @@
               <property name="font">
                <font>
                 <pointsize>12</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1422,6 +1474,7 @@
               <property name="font">
                <font>
                 <pointsize>12</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1473,6 +1526,7 @@
               <property name="font">
                <font>
                 <pointsize>12</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1541,6 +1595,7 @@
               <property name="font">
                <font>
                 <pointsize>10</pointsize>
+                <weight>75</weight>
                 <bold>true</bold>
                </font>
               </property>
@@ -1603,6 +1658,7 @@
         <property name="font">
          <font>
           <pointsize>10</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
