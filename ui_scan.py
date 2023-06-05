@@ -326,7 +326,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 784, 421))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 98, 36))
         self.verticalLayout_13 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.label_scan1 = QLabel(self.scrollAreaWidgetContents)
@@ -384,7 +384,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 784, 421))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 98, 36))
         self.verticalLayout_11 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.label_scan2 = QLabel(self.scrollAreaWidgetContents_2)
@@ -441,7 +441,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 784, 421))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 98, 36))
         self.verticalLayout_18 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.label_scan3 = QLabel(self.scrollAreaWidgetContents_3)
@@ -498,7 +498,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 784, 421))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 98, 36))
         self.verticalLayout_17 = QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.label_scan4 = QLabel(self.scrollAreaWidgetContents_4)
@@ -556,7 +556,7 @@ class Ui_MainWindow(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollAreaWidgetContents_5 = QWidget()
         self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
-        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 784, 421))
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 98, 36))
         self.verticalLayout_8 = QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.label_scan5 = QLabel(self.scrollAreaWidgetContents_5)
@@ -666,64 +666,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.addWidget(self.tabWidget)
 
         self.Pages.addWidget(self.EscanearDoc)
-        self.consultas = QWidget()
-        self.consultas.setObjectName(u"consultas")
-        self.verticalLayout_19 = QVBoxLayout(self.consultas)
-        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
-        self.scroll_area = QScrollArea(self.consultas)
-        self.scroll_area.setObjectName(u"scroll_area")
-        self.scroll_area.setWidgetResizable(True)
-        self.scrollAreaWidgetContents_7 = QWidget()
-        self.scrollAreaWidgetContents_7.setObjectName(u"scrollAreaWidgetContents_7")
-        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, 0, 145, 77))
-        self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_7)
-        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
-        self.verticalLayout_20 = QVBoxLayout()
-        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.clients = QLabel(self.scrollAreaWidgetContents_7)
-        self.clients.setObjectName(u"clients")
-
-        self.verticalLayout_20.addWidget(self.clients)
-
-        self.horizontalLayout_19 = QHBoxLayout()
-        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
-        self.label_28 = QLabel(self.scrollAreaWidgetContents_7)
-        self.label_28.setObjectName(u"label_28")
-
-        self.horizontalLayout_19.addWidget(self.label_28)
-
-        self.btn_consultar = QPushButton(self.scrollAreaWidgetContents_7)
-        self.btn_consultar.setObjectName(u"btn_consultar")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-        sizePolicy2.setHorizontalStretch(120)
-        sizePolicy2.setVerticalStretch(35)
-        sizePolicy2.setHeightForWidth(self.btn_consultar.sizePolicy().hasHeightForWidth())
-        self.btn_consultar.setSizePolicy(sizePolicy2)
-        self.btn_consultar.setMaximumSize(QSize(120, 35))
-        font6 = QFont()
-        font6.setPointSize(14)
-        font6.setBold(True)
-        font6.setWeight(75)
-        self.btn_consultar.setFont(font6)
-
-        self.horizontalLayout_19.addWidget(self.btn_consultar)
-
-        self.label_29 = QLabel(self.scrollAreaWidgetContents_7)
-        self.label_29.setObjectName(u"label_29")
-
-        self.horizontalLayout_19.addWidget(self.label_29)
-
-
-        self.verticalLayout_20.addLayout(self.horizontalLayout_19)
-
-
-        self.verticalLayout_21.addLayout(self.verticalLayout_20)
-
-        self.scroll_area.setWidget(self.scrollAreaWidgetContents_7)
-
-        self.verticalLayout_19.addWidget(self.scroll_area)
-
-        self.Pages.addWidget(self.consultas)
         self.tela_cadastro = QWidget()
         self.tela_cadastro.setObjectName(u"tela_cadastro")
         self.horizontalLayout_10 = QHBoxLayout(self.tela_cadastro)
@@ -738,11 +680,11 @@ class Ui_MainWindow(object):
         self.txt_telacadastro = QLabel(self.tela_cadastro)
         self.txt_telacadastro.setObjectName(u"txt_telacadastro")
         self.txt_telacadastro.setMaximumSize(QSize(16777215, 200))
-        font7 = QFont()
-        font7.setPointSize(24)
-        font7.setBold(True)
-        font7.setWeight(75)
-        self.txt_telacadastro.setFont(font7)
+        font6 = QFont()
+        font6.setPointSize(24)
+        font6.setBold(True)
+        font6.setWeight(75)
+        self.txt_telacadastro.setFont(font6)
         self.txt_telacadastro.setTextFormat(Qt.PlainText)
         self.txt_telacadastro.setAlignment(Qt.AlignCenter)
         self.txt_telacadastro.setWordWrap(False)
@@ -752,11 +694,11 @@ class Ui_MainWindow(object):
         self.txt_caduser = QLabel(self.tela_cadastro)
         self.txt_caduser.setObjectName(u"txt_caduser")
         self.txt_caduser.setMaximumSize(QSize(16777215, 50))
-        font8 = QFont()
-        font8.setPointSize(19)
-        font8.setBold(True)
-        font8.setWeight(75)
-        self.txt_caduser.setFont(font8)
+        font7 = QFont()
+        font7.setPointSize(19)
+        font7.setBold(True)
+        font7.setWeight(75)
+        self.txt_caduser.setFont(font7)
         self.txt_caduser.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_4.addWidget(self.txt_caduser)
@@ -769,11 +711,11 @@ class Ui_MainWindow(object):
         self.txt_nome.setSizePolicy(sizePolicy1)
         self.txt_nome.setMinimumSize(QSize(135, 48))
         self.txt_nome.setMaximumSize(QSize(135, 48))
-        font9 = QFont()
-        font9.setPointSize(12)
-        font9.setBold(True)
-        font9.setWeight(75)
-        self.txt_nome.setFont(font9)
+        font8 = QFont()
+        font8.setPointSize(12)
+        font8.setBold(True)
+        font8.setWeight(75)
+        self.txt_nome.setFont(font8)
 
         self.horizontalLayout_4.addWidget(self.txt_nome)
 
@@ -783,9 +725,9 @@ class Ui_MainWindow(object):
         self.entry_nome.setSizePolicy(sizePolicy1)
         self.entry_nome.setMinimumSize(QSize(500, 25))
         self.entry_nome.setMaximumSize(QSize(500, 25))
-        font10 = QFont()
-        font10.setPointSize(9)
-        self.entry_nome.setFont(font10)
+        font9 = QFont()
+        font9.setPointSize(9)
+        self.entry_nome.setFont(font9)
 
         self.horizontalLayout_4.addWidget(self.entry_nome)
 
@@ -800,7 +742,7 @@ class Ui_MainWindow(object):
         self.txt_user.setSizePolicy(sizePolicy1)
         self.txt_user.setMinimumSize(QSize(135, 48))
         self.txt_user.setMaximumSize(QSize(135, 48))
-        self.txt_user.setFont(font9)
+        self.txt_user.setFont(font8)
 
         self.horizontalLayout_5.addWidget(self.txt_user)
 
@@ -824,7 +766,7 @@ class Ui_MainWindow(object):
         self.txt_senha.setSizePolicy(sizePolicy1)
         self.txt_senha.setMinimumSize(QSize(135, 48))
         self.txt_senha.setMaximumSize(QSize(135, 48))
-        self.txt_senha.setFont(font9)
+        self.txt_senha.setFont(font8)
 
         self.horizontalLayout_6.addWidget(self.txt_senha)
 
@@ -846,7 +788,7 @@ class Ui_MainWindow(object):
         self.txt_csenha.setSizePolicy(sizePolicy1)
         self.txt_csenha.setMinimumSize(QSize(135, 48))
         self.txt_csenha.setMaximumSize(QSize(135, 48))
-        self.txt_csenha.setFont(font9)
+        self.txt_csenha.setFont(font8)
 
         self.horizontalLayout_7.addWidget(self.txt_csenha)
 
@@ -868,7 +810,7 @@ class Ui_MainWindow(object):
         self.txt_perfil.setSizePolicy(sizePolicy1)
         self.txt_perfil.setMinimumSize(QSize(135, 48))
         self.txt_perfil.setMaximumSize(QSize(135, 48))
-        self.txt_perfil.setFont(font9)
+        self.txt_perfil.setFont(font8)
 
         self.horizontalLayout_8.addWidget(self.txt_perfil)
 
@@ -876,11 +818,11 @@ class Ui_MainWindow(object):
         self.perfil_box.addItem("")
         self.perfil_box.addItem("")
         self.perfil_box.setObjectName(u"perfil_box")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.perfil_box.sizePolicy().hasHeightForWidth())
-        self.perfil_box.setSizePolicy(sizePolicy3)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.perfil_box.sizePolicy().hasHeightForWidth())
+        self.perfil_box.setSizePolicy(sizePolicy2)
         self.perfil_box.setMinimumSize(QSize(500, 25))
         self.perfil_box.setMaximumSize(QSize(500, 25))
 
@@ -900,11 +842,11 @@ class Ui_MainWindow(object):
         self.btn_cadastrar.setObjectName(u"btn_cadastrar")
         self.btn_cadastrar.setMinimumSize(QSize(100, 30))
         self.btn_cadastrar.setMaximumSize(QSize(100, 23))
-        font11 = QFont()
-        font11.setPointSize(10)
-        font11.setBold(True)
-        font11.setWeight(75)
-        self.btn_cadastrar.setFont(font11)
+        font10 = QFont()
+        font10.setPointSize(10)
+        font10.setBold(True)
+        font10.setWeight(75)
+        self.btn_cadastrar.setFont(font10)
 
         self.horizontalLayout_9.addWidget(self.btn_cadastrar)
 
@@ -941,7 +883,7 @@ class Ui_MainWindow(object):
         self.btn_cadastrar_user.setSizePolicy(sizePolicy1)
         self.btn_cadastrar_user.setMinimumSize(QSize(200, 45))
         self.btn_cadastrar_user.setMaximumSize(QSize(200, 45))
-        self.btn_cadastrar_user.setFont(font11)
+        self.btn_cadastrar_user.setFont(font10)
 
         self.horizontalLayout_2.addWidget(self.btn_cadastrar_user)
 
@@ -962,7 +904,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.Pages.setCurrentIndex(2)
+        self.Pages.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(5)
 
 
@@ -1030,10 +972,6 @@ class Ui_MainWindow(object):
         self.btn_salvar6.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
         self.btn_digitalizarTab6.setText(QCoreApplication.translate("MainWindow", u"Digitalizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab6), QCoreApplication.translate("MainWindow", u"Verso Procura\u00e7\u00e3o", None))
-        self.clients.setText("")
-        self.label_28.setText("")
-        self.btn_consultar.setText(QCoreApplication.translate("MainWindow", u"consultar", None))
-        self.label_29.setText("")
         self.label_22.setText("")
         self.txt_telacadastro.setText(QCoreApplication.translate("MainWindow", u"TELA DE CADASTRO", None))
         self.txt_caduser.setText(QCoreApplication.translate("MainWindow", u"Cadastrar Usu\u00e1rio", None))

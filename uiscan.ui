@@ -68,7 +68,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="home">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -579,8 +579,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>784</width>
-                 <height>421</height>
+                 <width>98</width>
+                 <height>36</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -677,8 +677,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>784</width>
-                 <height>421</height>
+                 <width>98</width>
+                 <height>36</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -769,8 +769,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>784</width>
-                 <height>421</height>
+                 <width>98</width>
+                 <height>36</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -861,8 +861,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>784</width>
-                 <height>421</height>
+                 <width>98</width>
+                 <height>36</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -959,8 +959,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>784</width>
-                 <height>421</height>
+                 <width>98</width>
+                 <height>36</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1128,84 +1128,6 @@
                </item>
               </layout>
              </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="consultas">
-       <layout class="QVBoxLayout" name="verticalLayout_19">
-        <item>
-         <widget class="QScrollArea" name="scroll_area">
-          <property name="widgetResizable">
-           <bool>true</bool>
-          </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents_7">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>145</width>
-             <height>77</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_21">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_20">
-              <item>
-               <widget class="QLabel" name="clients">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_19">
-                <item>
-                 <widget class="QLabel" name="label_28">
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_consultar">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                    <horstretch>120</horstretch>
-                    <verstretch>35</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>120</width>
-                    <height>35</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>14</pointsize>
-                    <weight>75</weight>
-                    <bold>true</bold>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>consultar</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_29">
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
             </item>
            </layout>
           </widget>
